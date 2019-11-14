@@ -27,20 +27,123 @@
   </header>
 
   <main class="page-main">
-      <img src="https://via.placeholder.com/300x200" class="page-main__image-main">
+    <img src="https://via.placeholder.com/300x200" class="page-main__image-main">
+
+    <section class="review">
+      <div class="review__text">
+        <h2 class="review__title title">Оставьте свой отзыв</h2>
+        <p class="review__descrption descrption">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+          посещенных вами достопримечательностях</p>
+      </div>
+      <form method="POST" action="https://echo.htmlacademy.ru" class="page-form">
+
+        <div class="review__introduction">
+          <h2 class="review__introduction__title title">Представьтесь:</h2>
+          <div class="review__introduction__inputs">
+            <ul class="review__introduction__inputs-list">
+
+              <li class="review__introduction__inputs-list__item">
+                <span>Имя*</span>
+                <input type="text" placeholder="Петр" class="input">
+              </li>
+
+              <li class="review__introduction__inputs-list__item">
+                <span>Фамилия*</span>
+                <input type="text" placeholder="Иванов" class="input">
+              </li>
+
+              <li class="review__introduction__inputs-list__item">
+                <span>Отчество</span>
+                <input type="text" placeholder="Александрович" class="input">
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="review__contacts">
+            <h2 class="review__contacts__title title">Контактная информация:</h2>
+            <div class="review__contacts__phone">
+              <p class="review__contacts__phone__text">Контактный телефон*:</p>
+              <input type="text" placeholder="Введите телефон" class="review__contacts__phone__input input">
+              <span class="review__contacts__phone__icon contacts-icon">#</span>
+            </div>
+            <div class="review__contacts__email">
+              <p class="review__contacts__email__text">Электронная почта*:</p>
+              <input type="text" placeholder="Введите e-mail" class="review__contacts__email__input input">
+              <span class="review__contacts__email__icon contacts-icon">#</span>
+            </div>
+          </div>
+          <div class="review__impression">
+            <h2 class="review__impression__title title">Ваше Общее впечатление:</h2>
+            <div class="review__impression__radio-btns">
+              <ul class="review__impression__radio-btns-list">
+                <li class="review__impression__radio-btns-list__item">
+                  <input type="radio" name="review-radio-positive" id="review-radio-positive"><label
+                    for="review-radio-positive">Скорее положительное</label>
+                </li>
+                <li class="review__impression__radio-btns-list__item">
+                  <input type="radio" name="review-radio-negative" id="review-radio-negative"><label
+                    for="review-radio-negative">Скорее отрицательное</label>
+                </li>
+                <li class="review__impression__radio-btns-list__item">
+                  <input type="radio" name="review-radio-neutral" id="review-radio-neutral"><label
+                    for="review-radio-neutral">Затрудняюсь ответить</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="review__sights">
+            <h2 class="review__impression__title title">Посещенные достопримечательности:</h2>
+            <div class="review__sights__checkboxes">
+              <ul class="review__sights__checkboxes-list">
+
+                <li class="review__sights__checkboxes-list__item">
+                  <input type="checkbox" name="review-checkbox-bridge" id="review-checkbox-bridge">
+                  <label for="review-checkbox1">Мост Дьявола</label>
+                </li>
+
+                <li class="review__sights__checkboxes-list__item">
+                  <input type="checkbox" name="review-checkbox-mountain" id="review-checkbox-mountain">
+                  <label for="review-checkbox2">Гора-Колокол</label>
+                </li>
+
+                <li class="review__sights__checkboxes-list__item">
+                  <input type="checkbox" name="review-checkbox-slide" id="review-checkbox-slide">
+                  <label for="review-checkbox3">Слайд-парк</label>
+                </li>
+
+                <li class="review__sights__checkboxes-list__item">
+                  <input type="checkbox" name="review-checkbox-rock" id="review-checkbox-rock">
+                  <label for="review-checkbox4">Красные скалы</label>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="review__describe">
+            <h2 class="review__describe__title title"></h2>Опишите свои эмоции:</h2>
+            <div class="review__describe__textarea-wrapper">
+              <textarea class="review__describe__textarea" placeholder="Опишите подробно все свои восторги" rows="8"
+                cols="30"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="review__button-send button">Отправить отзыв</button>
+        </div>
+      </form>
+    </section>
   </main>
 
   <footer class="page-footer">
     <b class="page-footer__visit-sedona-slogan">#visitsedona</b>
     <ul class="page-footer__social-media social-media-list">
-      <li class="social-media-list__item"><a href="#"><img src="https://via.placeholder.com/70x70"</a></li>
-      <li class="social-media-list__item"><a href="#"><img src="https://via.placeholder.com/70x70"</a></li>
-      <li class="social-media-list__item"><a href="#"><img src="https://via.placeholder.com/70x70"</a></li>
+      <li class="social-media-list__item"><a href="#"><img src="https://via.placeholder.com/70x70"></a></li>
+      <li class="social-media-list__item"><a href="#"><img src="https://via.placeholder.com/70x70"></a></li>
+      <li class="social-media-list__item"><a href="#"><img src="https://via.placeholder.com/70x70"></a></li>
     </ul>
     <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <img src="https://via.placeholder.com/50x50" class="copyright__image">
-      </div>
+      <b class="copyright__text">Разработано</b>
+      <img src="https://via.placeholder.com/50x50" class="copyright__image">
+    </div>
   </footer>
 
 </body>
