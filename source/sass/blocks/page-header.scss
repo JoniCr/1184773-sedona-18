@@ -1,0 +1,13 @@
+/*page-header.scss не положил в папку Index и photo, потому что footer и header у них одинаковые.
+ А если положить в каждый блок этот файл, то я нарушу критерий "не писать одинаковый код несколько раз"
+*/
+
+.page-header {
+  background-color: $blue;
+  color: #fff;
+  font-size: 18px;
+}
+
+.top-menu {
+  background-color: #fff;
+}

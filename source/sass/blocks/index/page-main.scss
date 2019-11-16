@@ -1,0 +1,34 @@
+.offer__image-wrapper {
+  position: relative;
+}
+
+.offer__image-text {
+  width: 282px;
+  height: 214px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.offer__description {
+  max-width: 265px;
+}
+
+// reason-one
+
+.reason-one__top-part {
+  background: $blue;
+}
+
+//reason-two
+
+
+.reason-two__top-part {
+  background: $blue;
+}
+
+//reason-3, reason-4, reason-5
+
+.reason-three, .reason-four, .reason-five {
+background: #ccc;
+}
