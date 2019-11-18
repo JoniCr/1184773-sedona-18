@@ -2,14 +2,17 @@
  А если положить в каждый блок этот файл, то я нарушу критерий "не писать одинаковый код несколько раз"
 */
 
-.copyright__image {
-  width: 27px;
-  height: 34px;
-}
+.copyright {
 
-.copyright__text {
-  font-size: 14px;
-  color: #000000;
+  &__image {
+    width: 27px;
+    height: 34px;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: #000000;
+  }
 }
 
 .page-footer__visit-sedona-slogan {

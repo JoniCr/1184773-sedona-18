@@ -1,30 +1,33 @@
-.offer__image-wrapper {
-  position: relative;
-}
+.offer {
+  &__image-wrapper {
+    position: relative;
+  }
 
-.offer__image-text {
-  width: 282px;
-  height: 214px;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
+  &___image-text {
+    width: 282px;
+    height: 214px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 
-.offer__description {
-  max-width: 265px;
+  &__description {
+    max-width: 265px;
+  }
+
 }
 
 // reason-one
 
 .reason-one__top-part {
-  background: $blue;
+  background: $bg-color;
 }
 
 //reason-two
 
 
 .reason-two__top-part {
-  background: $blue;
+  background: $bg-color;
 }
 
 //reason-3, reason-4, reason-5
