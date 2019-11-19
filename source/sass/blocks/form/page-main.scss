@@ -1,0 +1,31 @@
+.input {
+  background: $inputs-bg-color;
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 22px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contacts-icon {
+  display: inline-block;
+  background-color: #e6e6e6;
+  padding: 20px;
+  margin: 0;
+}
+
+.review__contacts__phone-email-wrapper {
+  display: flex;
+}
+
+.review__describe__textarea {
+  border: none;
+  background: $inputs-bg-color;
+  resize: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  width: 279px;
+  height: 160px;
+}
