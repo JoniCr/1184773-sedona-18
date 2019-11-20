@@ -3,10 +3,6 @@ body {
   font-weight: normal;
 }
 
-ul {
-  list-style-type: none;
-}
-
 .title {
   color: #000000;
   font-weight: bold;
@@ -51,4 +47,8 @@ ul {
   font-size: 18px;
   color: #000000;
   font-weight: bold;
+}
+
+.list-style-none {
+  list-style-type: none;
 }
