@@ -24,3 +24,31 @@ body {
 .white-color {
   color: #ffffff;
 }
+
+.main-btn {
+  display: block;
+  color: #ffffff;
+  border: none;
+  background: $bg-color;
+  font-size: 21px;
+  text-transform: uppercase;
+  padding: 18px 47px;
+  font-weight: bold;
+}
+
+.person-contacts-description {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: $main-text-color;
+  font-weight: normal;
+}
+
+.page-label {
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.list-style-none {
+  list-style-type: none;
+}
