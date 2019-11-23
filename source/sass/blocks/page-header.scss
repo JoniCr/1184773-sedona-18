@@ -1,14 +1,88 @@
-/*page-header.scss не положил в папку Index и photo, потому что footer и header у них одинаковые.
- А если положить в каждый блок этот файл, то я нарушу критерий "не писать одинаковый код несколько раз"
-*/
-
 .page-header {
-  background-color: $bg-color;
+  background-color: #ffffff;
   color: #ffffff;
   font-size: 18px;
   text-transform: uppercase;
 }
 
+.main-nav {
+  background-color: $bg-color;
+}
+
 .top-menu {
   background-color: #ffffff;
+  height: 55px;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+
+  &__burger {
+    position: relative;
+    z-index: 9;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+}
+
+.page-header__logo {
+  background: url("../../img/logo-sedona-mobile.svg");
+  position: absolute;
+  top: 0;
+  z-index: 9;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 102px;
+  height: 83px;
+}
+
+@media (min-width: $tablet-width) {
+  .top-menu__burger {
+    display: none;
+  }
+
+  .site-list__item {
+    display: inline-block;
+  }
+
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    text-align: center;
+  }
+
+  .top-menu {
+    position: inherit;
+    height: 0;
+  }
+
+  .page-header__logo {
+    background: url("../../img/logo-sedona-tablet.svg");
+  }
+
+  .page-header {
+    min-height: 55px;
+  }
+
+  .main-nav {
+    min-height: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    background: url("../../img/logo-sedona-desktop.svg");
+    width: 188px;
+    height: 96px;
+  }
+
+  .main-nav {
+    background: #ffffff;
+    color: #000000;
+  }
 }

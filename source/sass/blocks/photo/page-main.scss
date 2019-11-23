@@ -1,7 +1,228 @@
+.about-photos {
+  min-height: 350px;
+  text-align: center;
+
+  &__image {
+    background: url("../../../img/bg-back-mobile@1x.jpg") center center;
+    background-size: cover;
+    width: 100%;
+    height: 160px;
+    margin-bottom: 40px;
+  }
+}
+
+.text-sedona-svg {
+  width: 229px;
+  height: 39px;
+  margin-top: 50px;
+}
+
 .all-photos {
   font-size: 14px;
 
   &__comment {
     text-transform: uppercase;
+    display: block;
+  }
+
+  &__block {
+    border-top: 1px #e5e5e5 solid;
+    padding-top: 20px;
+
+    &:last-child {
+      border-bottom: 1px #e5e5e5 solid;
+    }
+  }
+
+  &-container {
+    width: 280px;
+    margin: auto;
+  }
+}
+
+.sunset-image {
+  background: url("../../../img/photo-sunset-mobile@1x.jpg") center center no-repeat;
+  width: 280px;
+  height: 280px;
+}
+
+.cactus-image {
+  background: url("../../../img/photo-cactus-mobile@1x.jpg") center center no-repeat;
+  width: 280px;
+  height: 280px;
+}
+
+.roads-image {
+  background: url("../../../img/photo-roads-mobile@1x.jpg") center center no-repeat;
+  width: 280px;
+  height: 280px;
+}
+
+.bridge-image {
+  background: url("../../../img/main-bridge-mobile@1x.jpg") center center no-repeat;
+  width: 280px;
+  height: 280px;
+}
+
+.doubts__video {
+  background: url("../../../img/video-mobile@1x.jpg");
+  width: 100%;
+  height: 200px;
+}
+
+@media (min-width: $tablet-width) {
+  .about-photos {
+    min-height: 350px;
+
+    &__image {
+      background: url("../../../img/bg-back-tablet@1x.jpg") center center;
+      background-size: cover;
+      height: 290px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .all-photos {
+    margin-top: 70px;
+
+    &__block {
+      border-top: none;
+      padding-top: 0;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__block-sunset {
+      flex-basis: 100%;
+    }
+
+    &__about-author {
+      height: 80px;
+      background: $inputs-bg-color;
+      position: relative;
+    }
+
+    &__likes {
+      position: absolute;
+      top: 50%;
+      right: 35px;
+      transform: translateY(-50%);
+    }
+
+    &-container {
+      width: 650px;
+      margin: auto;
+    }
+  }
+
+  .sunset-image {
+    background: url("../../../img/photo-sunset-tablet@1x.jpg") center center no-repeat;
+    width: 648px;
+    height: 400px;
+  }
+
+  .cactus-image {
+    background: url("../../../img/photo-cactus-tablet@1x.jpg") center center no-repeat;
+    width: 324px;
+    height: 267px;
+  }
+
+  .roads-image {
+    background: url("../../../img/photo-roads-tablet@1x.jpg") center center no-repeat;
+    width: 324px;
+    height: 267px;
+  }
+
+  .bridge-image {
+    background: url("../../../img/main-bridge-tablet@1x.jpg") center center no-repeat;
+    width: 324px;
+    height: 267px;
+  }
+
+
+  .text-sedona-svg {
+    width: 458px;
+    height: 78px;
+    margin-top: 90px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-photos {
+    min-height: 500px;
+
+    &__image {
+      background: url("../../../img/bg-back-desktop@1x.jpg") center center;
+      background-size: cover;
+      height: 300px;
+      margin-bottom: 100px;
+    }
+  }
+
+  .text-sedona-svg {
+    width: 461px;
+    height: 80px;
+  }
+
+  .all-photos {
+    &-container {
+      width: 1200px;
+      margin: auto;
+    }
+
+    &__about-author {
+      margin-top: -80px;
+      background: rgba($color: #000000, $alpha: 0.3);
+      color: #ffffff;
+      width: 100%;
+    }
+
+    &__likes__image path {
+      fill: #ffffff;
+    }
+  }
+
+  .sunset-image {
+    background: url("../../../img/photo-sunset-desktop@1x.jpg") center center no-repeat;
+    width: 100%;
+    height: 390px;
+    background-size: cover;
+  }
+
+  .cactus-image {
+    background: url("../../../img/photo-cactus-desktop@1x.jpg") center center no-repeat;
+    width: 400px;
+    height: 267px;
+  }
+
+  .roads-image {
+    background: url("../../../img/photo-roads-desktop@1x.jpg") center center no-repeat;
+    width: 400px;
+    height: 267px;
+  }
+
+  .bridge-image {
+    background: url("../../../img/main-bridge-desktop@1x.jpg") center center no-repeat;
+    width: 400px;
+    height: 267px;
+  }
+
+  .doubts-container {
+    width: 800px;
+    margin: auto;
+  }
+
+  .doubts__video {
+    background: url("../../../img/video-desktop@1x.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 500px;
   }
 }

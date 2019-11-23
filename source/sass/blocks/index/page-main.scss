@@ -1,32 +1,74 @@
 .offer {
-  &__image-wrapper {
-    position: relative;
+  min-height: 350px;
+
+  &__image {
+    background: url("../../../img/bg-back-mobile@1x.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 389px;
   }
 
-  &___image-text {
+  &__image-text {
     width: 282px;
     height: 214px;
     position: absolute;
-    left: 0;
-    top: 0;
+    top: 230px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__text {
+    min-height: 200px;
+    text-align: center;
   }
 
   &__description {
     max-width: 265px;
+    display: inline-block;
   }
 }
 
 // reason-one
+.reason-one {
+  &__text-part {
+    background: $bg-color;
+    min-height: 200px;
+  }
 
-.reason-one__top-part {
-  background: $bg-color;
+  &__icons-part {
+    min-height: 400px;
+  }
+
+  &__image {
+    background: url("../../../img/main-city-mobile@1x.jpg") center center no-repeat;
+    height: 260px;
+  }
+}
+
+.reason-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.reasons-images {
+  width: 100%;
+  background-size: cover;
 }
 
 //reason-two
 
 
-.reason-two__top-part {
-  background: $bg-color;
+.reason-two {
+  &__text-part {
+    background: $bg-color;
+    min-height: 200px;
+  }
+
+  &__image {
+    background: url("../../../img/main-bridge-mobile@1x.jpg") center center no-repeat;
+    height: 260px;
+    background-size: cover;
+  }
 }
 
 //reason-3, reason-4, reason-5
@@ -34,5 +76,138 @@
 .reason-three,
 .reason-four,
 .reason-five {
-  background: #cccccc;
+  background: #eeeeee;
+  min-height: 150px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+// end of reasons
+
+@media (min-width: $tablet-width) {
+  .offer {
+    min-height: 600px;
+
+    &__image {
+      background: url("../../../img/bg-back-tablet@1x.jpg") no-repeat;
+      background-size: cover;
+      height: 518px;
+    }
+
+    &__image-text {
+      width: 460px;
+      height: 350px;
+      top: 130px;
+    }
+
+    &__description {
+      max-width: none;
+    }
+  }
+
+  .reason-one {
+    &__text-part {
+      min-height: 250px;
+    }
+
+    &__icons-part {
+      min-height: 330px;
+      display: flex;
+    }
+
+    &__image {
+      background: url("../../../img/main-city-tablet@1x.jpg") center center no-repeat;
+      height: auto;
+      background-size: cover;
+    }
+
+    &__wrapper {
+      display: flex;
+      min-height: 250px;
+    }
+
+    &-icon-wrap {
+      width: 33.3%;
+      text-align: center;
+    }
+  }
+
+  .reason-icon {
+    display: block;
+    width: 100%;
+    height: 75px;
+  }
+
+  .reason-two {
+    display: flex;
+    min-height: 250px;
+    flex-direction: row-reverse;
+
+    &__text-part {
+      background: $bg-color;
+      min-height: 250px;
+    }
+
+    &__image {
+      background: url("../../../img/main-bridge-tablet@1x.jpg") center center no-repeat;
+      height: 250px;
+      background-size: cover;
+    }
+  }
+
+  .reason-three-four-five-wrapper {
+    display: flex;
+    min-height: 250px;
+  }
+
+  .reason-three,
+  .reason-four,
+  .reason-five {
+    width: 33.3%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offer {
+    &__image {
+      background: url("../../../img/bg-back-desktop@1x.jpg") no-repeat;
+      background-size: cover;
+      height: 518px;
+    }
+  }
+
+  .reason-one {
+    &__text-part {
+      min-height: 250px;
+      min-width: 400px;
+    }
+
+    &__image {
+      background: url("../../../img/main-city-desktop@1x.jpg") center center no-repeat;
+      background-size: cover;
+    }
+
+    &__wrapper {
+      display: flex;
+      min-height: 250px;
+    }
+
+    &-icon-wrap {
+      width: 33.3%;
+      text-align: center;
+    }
+  }
+
+  .reason-icon {
+    display: block;
+    width: 100%;
+    height: 75px;
+  }
+
+  .reason-two {
+    &__image {
+      background: url("../../../img/main-bridge-desktop@1x.jpg") center center no-repeat;
+      background-size: cover;
+    }
+  }
 }
