@@ -22,84 +22,91 @@
       </div>
     </nav>
     <div class="top-menu">
-      <img src="img/logo-sedona-mobile.svg" alt="Sedona" class="top-menu__logo">
+      <div class="page-header__logo"></div>
       <button class="top-menu__burger button" type="button">&equiv;</button>
     </div>
   </header>
 
   <main class="page-main">
     <section class="offer">
-      <div class="offer__image-wrapper">
-        <img src="./img/bg-back-mobile@1x.jpg" alt="Sedona" class="offer__image">
+      <div class="offer__image">
         <img src="./img/text-sedona-index.svg" alt="Sedona" class="offer__image-text">
       </div>
-      <h1 class="offer__title title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-      <p class="offer__description description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <div class="offer__text">
+        <h1 class="offer__title title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p class="offer__description description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
     </section>
 
     <section class="reason-one">
-      <div class="reason-one__top-part">
-        <h3 class="reason-one__title title white-color">Настоящий городок</h3>
-        <span class="reason-one__number reason-number white-color">— №1 —</span>
-        <p class="reason-one__description description white-color">Седона не аттракцион для туристов, там течет своя жизнь</p>
+      <div class="reason-one__wrapper">
+        <div class="reason-one__text-part">
+          <h3 class="reason-one__title title white-color">Настоящий городок</h3>
+          <span class="reason-one__number reason-number white-color">— №1 —</span>
+          <p class="reason-one__description description white-color">Седона не аттракцион для туристов, там течет своя
+            жизнь</p>
+        </div>
+        <div class="reason-one__image reasons-images"></div>
       </div>
+      <div class="reason-one__icons-part">
 
-      <img src="./img/main-city-mobile@1x.jpg" class="reason-one__image reasons-images">
-
-      <div class="reason-one__under-part">
-
-        <div class="reason-one__accommodation">
+        <div class="reason-one__accommodation reason-one-icon-wrap">
           <img src="./img/icon-house.svg" class="reason-one__accommodation__icon reason-icon">
           <b class="reason-one__accommodation__title title">Жильё</b>
-          <p class="reason-one__accommodation__description description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          <p class="reason-one__accommodation__description description">Рекомендуем пожить в настоящем мотеле, все как в
+            кино!</p>
         </div>
 
-        <div class="reason-one__souvenirs">
+        <div class="reason-one__souvenirs reason-one-icon-wrap">
           <img src="./img/icon-gift.svg" class="reason-one__souvenirs__icon reason-icon">
           <b class="reason-one__souvenirs__title title">Сувениры</b>
-          <p class="reason-one__souvenirs__description description">Не только китайского, но и местного производства!</p>
+          <p class="reason-one__souvenirs__description description">Не только китайского, но и местного производства!
+          </p>
         </div>
 
-        <div class="reason-one__food">
+        <div class="reason-one__food reason-one-icon-wrap">
           <img src="./img/icon-burger.svg" class="reason-one__food__icon reason-icon">
           <b class="reason-one__food__title title">Еда</b>
-          <p class="reason-one__food__description description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+          <p class="reason-one__food__description description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
+          </p>
         </div>
 
       </div>
     </section>
 
     <section class="reason-two">
-      <div class="reason-two__top-part">
+      <div class="reason-two__text-part">
         <h3 class="reason-two__title title white-color">Там есть мост дьявола</h3>
         <span class="reason-two__q reason-number white-color">— №2 —</span>
-        <p class="reason-two__description description white-color">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        <p class="reason-two__description description white-color">Да, по нему можно пройти! Если вы осмелитесь, конечно
+        </p>
       </div>
-      <img src="./img/main-bridge-mobile@1x.jpg" class="reason-two__image reasons-images">
+      <div class="reason-two__image reasons-images"></div>
     </section>
+    <div class="reason-three-four-five-wrapper">
+      <section class="reason-three">
+        <h3 class="reason-three__title title">Небольшая площадь</h3>
+        <span class="reason-three__number reason-number">— №3 —</span>
+        <p class="reason-three__description description">Все интересные места находятся очень близко</p>
+      </section>
 
-    <section class="reason-three">
-      <h3 class="reason-three__title title">Небольшая площадь</h3>
-      <span class="reason-three__number reason-number">— №3 —</span>
-      <p class="reason-three__description description">Все интересные места находятся очень близко</p>
-    </section>
+      <section class="reason-four">
+        <h3 class="reason-four__title title">Красивая дорога</h3>
+        <span class="reason-four__number reason-number">— №4 —</span>
+        <p class="reason-four__description description">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
+      </section>
 
-    <section class="reason-four">
-      <h3 class="reason-four__title title">Красивая дорога</h3>
-      <span class="reason-four__number reason-number">— №4 —</span>
-      <p class="reason-four__description description">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
-    </section>
-
-    <section class="reason-five">
-      <h3 class="reason-five__title title">Мало туристов</h3>
-      <span class="reason-five__number reason-number">— №5 —</span>
-      <p class="reason-five__description description">Большинство едет в Гранд Каньон и толпиться там</p>
-    </section>
-
+      <section class="reason-five">
+        <h3 class="reason-five__title title">Мало туристов</h3>
+        <span class="reason-five__number reason-number">— №5 —</span>
+        <p class="reason-five__description description">Большинство едет в Гранд Каньон и толпиться там</p>
+      </section>
+    </div>
     <section class="interested">
       <div class="interested__find-hotel">
         <h2 class="interested__title title">Заинтересовались?</h2>
-        <p class="interested__description description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+        <p class="interested__description description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+          предложения
           гостиниц в седоне</p>
         <button class="interested__button main-btn" type="button">Найти гостиницу</button>
       </div>

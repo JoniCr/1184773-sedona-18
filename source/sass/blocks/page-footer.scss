@@ -1,7 +1,3 @@
-/*page-footer.scss не положил в папку Index и photo, потому что footer и header у них одинаковые.
- А если положить в каждый блок этот файл, то я нарушу критерий "не писать одинаковый код несколько раз"
-*/
-
 .copyright {
   &__image {
     width: 27px;
@@ -17,4 +13,14 @@
 .page-footer__visit-sedona-slogan {
   font-size: 21px;
   font-weight: 700;
+}
+
+.social-media-list__item {
+  display: inline-block;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+  }
 }
