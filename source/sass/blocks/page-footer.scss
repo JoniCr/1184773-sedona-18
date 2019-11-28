@@ -1,12 +1,16 @@
-.copyright {
-  &__image {
-    width: 27px;
-    height: 34px;
-  }
+.copyright__image {
+  width: 27px;
+  height: 34px;
+}
 
-  &__text {
-    font-size: 14px;
-    color: #000000;
+.copyright__text {
+  font-size: 14px;
+  color: #000000;
+}
+
+.page-footer {
+  @media (min-width: $tablet-width) {
+    display: flex;
   }
 }
 
@@ -17,10 +21,4 @@
 
 .social-media-list__item {
   display: inline-block;
-}
-
-@media (min-width: $tablet-width) {
-  .page-footer {
-    display: flex;
-  }
 }
