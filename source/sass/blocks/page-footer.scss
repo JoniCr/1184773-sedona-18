@@ -1,3 +1,8 @@
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
+}
+
 .copyright__image {
   width: 27px;
   height: 34px;
@@ -6,19 +11,65 @@
 .copyright__text {
   font-size: 14px;
   color: #000000;
+  text-transform: uppercase;
+  margin-right: 10px;
 }
 
 .page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+
   @media (min-width: $tablet-width) {
-    display: flex;
+    flex-direction: row;
+    padding-bottom: 45px;
+    justify-content: space-around;
   }
 }
 
 .page-footer__visit-sedona-slogan {
   font-size: 21px;
   font-weight: 700;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .social-media-list__item {
   display: inline-block;
+  width: 47px;
+  height: 47px;
+  background: $bg-color;
+  margin-right: 6px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social-media-list__item a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-list__item svg {
+  fill: #ffffff;
+}
+
+.page-footer__social-media {
+  padding: 0;
+  display: flex;
+  margin: 0 0 40px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
