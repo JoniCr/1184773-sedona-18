@@ -44,6 +44,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 10px;
+    margin-bottom: 26px;
   }
 }
 
@@ -57,17 +58,17 @@
 }
 
 .about-photos__image {
-  background: url("../../../img/bg-back-mobile@1x.jpg") center center;
-  background-size: cover;
+  background: url("../../../img/bg-back-mobile@1x.jpg");
   width: 100%;
   height: 160px;
   margin-bottom: 40px;
+  background-position: bottom;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    background: url("../../../img/bg-back-tablet@1x.jpg") center center;
-    background-size: cover;
+    background: url("../../../img/bg-back-tablet@1x.jpg");
     height: 290px;
+    background-position: bottom;
     margin-bottom: 40px;
   }
 
@@ -94,6 +95,7 @@
   @media (min-width: $desktop-width) {
     width: 461px;
     height: 80px;
+    margin-top: 100px;
   }
 }
 
@@ -102,6 +104,30 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 75px;
+  }
+
+}
+
+.all-photos__about-author {
+  margin-top: 19px;
+
+  @media (min-width: $tablet-width) {
+    background: $inputs-bg-color;
+    position: relative;
+    padding: 20px 0 0 20px;
+    height: 60px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -80px;
+    background: rgba($color: #000000, $alpha: 0.3);
+    color: #ffffff;
+    padding: 20px 0 0 0;
   }
 }
 
@@ -112,6 +138,10 @@
 
 .all-photos__author {
   margin: 10px 0 10px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 8px 0 10px 0;
+  }
 }
 
 .all-photos__likes {
@@ -121,15 +151,16 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 50%;
-    right: 35px;
+    right: 28px;
     transform: translateY(-50%);
+    align-items: center;
   }
 }
 
 .all-photos__block {
   border-top: 1px #e5e5e5 solid;
   padding-top: 22px;
-  margin-bottom: 18px;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     border-top: none;
@@ -170,25 +201,43 @@
   }
 }
 
-.all-photos__about-author {
+.sunset-about-author {
   @media (min-width: $tablet-width) {
-    background: $inputs-bg-color;
-    position: relative;
-    padding: 20px 0 0 20px;
-    height: 60px;
+    max-width: 628px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -80px;
-    background: rgba($color: #000000, $alpha: 0.3);
-    color: #ffffff;
+    max-width: 100%;
+    padding-left: 12px;
   }
+}
+
+.cactus-about-author {
+  padding-left: 13px;
 }
 
 
 .sunset-likes {
-  right: 22px;
+  @media (min-width: $tablet-width) {
+    right: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 13px;
+  }
 }
+
+
+.roads-likes {
+  @media (min-width: $tablet-width) {
+    right: 35px;
+  }
+}
+
+.bridge-likes {
+  right: 21px;
+}
+
 
 .all-photos-container {
   @media (min-width: $tablet-width) {
@@ -203,7 +252,11 @@
 }
 
 .all-photos__svg {
-  margin-right: 12px;
+  margin-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 12px;
+  }
 }
 
 .all-photos__svg path {
@@ -248,8 +301,34 @@
   @media (min-width: $desktop-width) {
     background: url("../../../img/photo-cactus-desktop@1x.jpg");
     width: 100%;
-    height: 270px;
     background-size: cover;
+  }
+}
+
+.roads-about-author {
+  @media (min-width: $tablet-width) {
+    background: #eaeaea;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: rgba($color: #000000, $alpha: 0.3);
+    padding-left: 19px;
+  }
+}
+
+.brigde-about-author {
+  padding-left: 22px;
+}
+
+.all-photos__block-bridge {
+  @media (min-width: $desktop-width) {
+    flex-basis: 392px;
+  }
+}
+
+.all-photos__block-roads {
+  @media (min-width: $desktop-width) {
+    flex-basis: 397px;
   }
 }
 
@@ -267,28 +346,25 @@
   @media (min-width: $desktop-width) {
     background: url("../../../img/photo-roads-desktop@1x.jpg");
     width: 100%;
-    height: 270px;
     background-size: cover;
   }
 }
 
 .bridge-image {
-  background: url("../../../img/main-bridge-mobile@1x.jpg") center center no-repeat;
+  background: url("../../../img/photo-bridge-mobile@1x.jpg") center center no-repeat;
   width: 280px;
   height: 280px;
   background-size: cover;
 
   @media (min-width: $tablet-width) {
-    background: url("../../../img/main-bridge-tablet@1x.jpg") center center no-repeat;
+    background: url("../../../img/photo-bridge-tablet@1x.jpg");
     width: 324px;
     height: 267px;
-    background-size: cover;
   }
 
   @media (min-width: $desktop-width) {
     background: url("../../../img/photo-bridge-desktop@1x.jpg");
     width: 100%;
-    height: 270px;
     background-size: cover;
   }
 }

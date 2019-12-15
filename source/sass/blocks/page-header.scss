@@ -51,7 +51,7 @@
   border: none;
   background: none;
   padding: 0;
-  margin-right: 20px;
+  margin-right: 12px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -71,6 +71,10 @@
   @media (min-width: $tablet-width) {
     flex-direction: unset;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: unset;
   }
 }
 
@@ -109,6 +113,10 @@
     &:nth-child(3) {
       margin-left: 105px;
     }
+
+    &:nth-child(1) {
+      width: 23%;
+    }
   }
 }
 
@@ -125,7 +133,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  right: 17px;
+  right: 6px;
   top: 17px;
   border: none;
   background: none;
@@ -141,11 +149,11 @@
 
 .main-nav__wrapper {
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    padding: 0 17px 0 40px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 80px;
+    padding: 0px 64px 0 80px;
   }
 }
 

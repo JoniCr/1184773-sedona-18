@@ -1,5 +1,9 @@
 .offer {
   @media (min-width: $tablet-width) {
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-bottom: 52px;
   }
 }
@@ -84,10 +88,23 @@
 
   @media (min-width: $tablet-width) {
     max-width: none;
+    margin-top: 32px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 28px;
   }
 }
 
 // reason-one
+
+.reason-one {
+  margin-top: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
 
 .reason-one-icon-wrap {
   margin-bottom: 16px;
@@ -113,7 +130,7 @@
   background: $bg-color;
   position: relative;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     min-height: 250px;
@@ -132,36 +149,47 @@
 }
 
 .reason-one__title {
-  margin: 42px auto 15px auto;
+  margin: 42px auto 10px auto;
 
   @media (min-width: $tablet-width) {
     max-width: 50%;
+    margin: 46px auto 13px auto;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 54px;
+    margin-right: 102px;
   }
 }
 
 .reason-one__description {
   line-height: 20px;
-  margin: 22px auto 0 auto;
+  margin: 20px auto 0 auto;
   max-width: 96%;
 
   @media (min-width: $tablet-width) {
     max-width: 68%;
+    margin: 22px auto 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 24px;
   }
 }
 
 
 .reason-one__icons-part {
-  min-height: 400px;
-  padding: 28px 0 0 12px;
+  min-height: 395px;
+  padding: 22px 0 0 12px;
 
   @media (min-width: $tablet-width) {
-    min-height: 274px;
+    min-height: 270px;
     display: flex;
     padding: 60px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 274px;
   }
 }
 
@@ -169,6 +197,10 @@
   padding-top: 13px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-top: 26px;
   }
 }
@@ -179,7 +211,24 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    margin-top: 24px;
+    margin-top: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 23px;
+  }
+}
+
+.reason-one-souvenirs-wrapper {
+  display: inline-flex;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 13px;
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -187,16 +236,59 @@
   @media (min-width: $tablet-width) {
     max-width: 65%;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 67%;
+  }
+}
+
+.icons-part-house {
+  @media (min-width: $desktop-width) {
+    padding-right: 14px;
+  }
+}
+
+.icons-part-souvenir {
+  @media (min-width: $desktop-width) {
+    padding-left: 11px;
+  }
+}
+
+.icons-part__svg-accommodation {
+  @media (min-width: $desktop-width) {
+    padding-right: 12px;
+  }
+}
+
+.icons-part__svg-souvenir {
+  @media (min-width: $desktop-width) {
+    padding-left: 10px;
+  }
 }
 
 .icons-part__gift-desc {
   @media (min-width: $tablet-width) {
-    max-width: 65%;
+    max-width: 69%;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 50%;
+    max-width: 51%;
   }
+}
+
+.reason-one__accomodation-wrapper {
+
+  display: inline-flex;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 10px;
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
+
 }
 
 .icons-part__food-desc {
@@ -224,15 +316,21 @@
 }
 
 .reason-one__accommodation {
-  order: 0;
+  @media (min-width: $tablet-width) {
+    order: 0;
+  }
 }
 
 .reason-one__food {
-  order: 1;
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }
 
 .reason-one__souvenirs {
-  order: 2;
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
 }
 
 
@@ -268,7 +366,7 @@
   @media (min-width: $desktop-width) {
     display: block;
     width: 100%;
-    height: 75px;
+    height: 73px;
   }
 }
 
@@ -288,10 +386,13 @@
 .reason-two__title {
   margin-bottom: 12px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    max-width: 151px;
     margin: 0 auto 15px auto;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-top: 6px;
-    width: 151px;
   }
 }
 
@@ -300,7 +401,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 75%;
-    margin: 16px auto 0 auto;
+    margin: 20px auto 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -312,17 +413,19 @@
 .reason-two__text-part {
   background: #81b3d2;
   min-height: 148px;
-  padding: 45px 20px 0 20px;
+  padding: 42px 20px 0 20px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     background: $bg-color;
     min-height: 210px;
     width: 28%;
+    padding: 45px 15px 0 20px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 30%;
+    width: 31%;
+    padding-right: 15px;
   }
 }
 
@@ -341,6 +444,7 @@
     background: url("../../../img/main-bridge-desktop@1x.jpg") center center no-repeat;
     background-size: cover;
     height: 255px;
+    width: 69%;
   }
 }
 
@@ -350,6 +454,18 @@
   @media (min-width: $tablet-width) {
     display: flex;
     min-height: 250px;
+  }
+}
+
+.reason-three__wrapper {
+  @media (min-width: $tablet-width) {
+    padding-right: 15px;
+  }
+}
+
+.reason-five__wrapper {
+  @media (min-width: $tablet-width) {
+    padding-left: 15px;
   }
 }
 
@@ -367,10 +483,11 @@
 
   @media (min-width: $tablet-width) {
     max-width: 70%;
+    margin-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 73%;
+    max-width: 76%;
     margin-top: 25px;
   }
 }
@@ -394,6 +511,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 52%;
+    margin-top: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -416,18 +534,27 @@
   margin: 16px auto 0 auto;
 
   @media (min-width: $tablet-width) {
-    max-width: 54%;
+    max-width: 63%;
+    margin-top: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 66%;
-    margin-top: 25px;
+    max-width: 69%;
   }
 }
 
 .reasons-title {
-  width: 50%;
+  width: 100%;
   margin: 0 auto 12px auto;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 30%;
+    margin-top: 1px;
+  }
 }
 
 .reason-three,
