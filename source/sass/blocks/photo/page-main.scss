@@ -213,7 +213,11 @@
 }
 
 .cactus-about-author {
-  padding-left: 13px;
+  padding-left: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 13px;
+  }
 }
 
 
@@ -317,7 +321,9 @@
 }
 
 .brigde-about-author {
-  padding-left: 22px;
+  @media (min-width: $tablet-width) {
+    padding-left: 22px;
+  }
 }
 
 .all-photos__block-bridge {
