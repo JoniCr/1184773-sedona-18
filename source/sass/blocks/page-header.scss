@@ -1,24 +1,35 @@
 .page-header {
   background-color: #ffffff;
-  color: #ffffff;
   font-size: 18px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     min-height: 55px;
+    font-size: 14px;
+    color: #000000;
   }
 }
 
 .main-nav {
   background-color: $bg-color;
+  position: relative;
+  transition: all 0.2s;
 
   @media (min-width: $tablet-width) {
     min-height: 55px;
+    background: #ffffff;
   }
 
   @media (min-width: $desktop-width) {
-    background: #ffffff;
     color: #000000;
+  }
+}
+
+.inactive-menu {
+  margin-top: -220px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
   }
 }
 
@@ -28,6 +39,7 @@
   position: relative;
   display: flex;
   flex-direction: row-reverse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
   @media (min-width: $tablet-width) {
     position: inherit;
@@ -36,17 +48,34 @@
 }
 
 .top-menu__burger {
-  position: relative;
-  z-index: 9;
+  border: none;
+  background: none;
+  padding: 0;
+  margin-right: 12px;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
+.burger-svg {
+  fill: #81b3d2;
+}
+
 .main-nav__list {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: unset;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: unset;
+  }
 }
 
 .page-header__logo {
@@ -71,19 +100,83 @@
 }
 
 .site-list__item {
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  height: 55px;
+
   @media (min-width: $tablet-width) {
-    display: inline-block;
+    width: 25%;
+    box-shadow: none;
+
+    &:nth-child(3) {
+      margin-left: 105px;
+    }
+
+    &:nth-child(1) {
+      width: 23%;
+    }
+  }
+}
+
+.site-list__link {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 18px 0;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
   }
 }
 
 .main-nav__toggle {
+  position: absolute;
+  right: 6px;
+  top: 17px;
+  border: none;
+  background: none;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
+.toggle-svg {
+  fill: #ffffff;
+}
+
 .main-nav__wrapper {
   @media (min-width: $tablet-width) {
-    text-align: center;
+    padding: 0 17px 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 64px 0 80px;
+  }
+}
+
+.site-link-main {
+  @media (min-width: $tablet-width) {
+    float: left;
+  }
+}
+
+.site-link-photo {
+  @media (min-width: $tablet-width) {
+    float: left;
+  }
+}
+
+.site-link-comment {
+  @media (min-width: $tablet-width) {
+    float: right;
+  }
+}
+
+.site-link-academy {
+  @media (min-width: $tablet-width) {
+    float: right;
   }
 }
