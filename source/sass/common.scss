@@ -42,6 +42,11 @@ body {
   text-transform: uppercase;
   padding: 18px 47px;
   font-weight: bold;
+
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 135px;
+  }
 }
 
 .page-label {
@@ -52,4 +57,15 @@ body {
 
 .list-style-none {
   list-style-type: none;
+}
+
+.page-hr {
+  width: 100%;
+  border: none;
+  height: 1px;
+  background: $grey;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

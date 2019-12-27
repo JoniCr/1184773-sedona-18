@@ -26,7 +26,7 @@
 }
 
 .inactive-menu {
-  margin-top: -220px;
+  margin-top: -224px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -104,7 +104,7 @@
   width: 100%;
   font-weight: bold;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  height: 55px;
+  height: 56px;
 
   @media (min-width: $tablet-width) {
     width: 25%;
