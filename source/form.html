@@ -45,60 +45,94 @@
   </header>
 
   <main class="page-main">
-    <div class="page-main__image-main"></div>
-    <div class="page-container">
-      <section class="review">
+    <div class="page-main__image-main">
+      <svg class="page-main__sedona-text" version="1.0" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="459.754px" height="79.805px"
+        viewBox="0 0 459.754 79.805" enable-background="new 0 0 459.754 79.805" xml:space="preserve">
+        <g>
+          <path fill="#FFFFFF"
+            d="M44.466,21.738c-3.572-2.979-8.139-4.963-12.902-4.963c-3.572,0-8.338,2.084-8.338,6.253 c0,4.368,5.261,6.055,8.636,7.146l4.964,1.489C47.248,34.74,55.287,40,55.287,52.11c0,7.445-1.787,15.088-7.742,20.149 c-5.855,4.964-13.697,7.048-21.24,7.048c-9.43,0-18.661-3.177-26.305-8.537l8.338-15.683c4.865,4.269,10.621,7.742,17.271,7.742 c4.566,0,9.43-2.283,9.43-7.545c0-5.459-7.643-7.345-11.812-8.535C11.019,43.274,2.978,40.101,2.978,25.607 c0-15.188,10.818-25.112,25.807-25.112c7.543,0,16.775,2.382,23.426,6.154L44.466,21.738z" />
+          <path fill="#FFFFFF"
+            d="M91.831,18.959v12.506h21.937v16.479H91.831v12.899h23.127v16.479H72.376V2.483h42.582V18.96L91.831,18.959 L91.831,18.959z" />
+          <path fill="#FFFFFF"
+            d="M129.417,2.482h27.594c20.844,0,38.016,16.377,38.016,37.419c0,21.041-17.271,37.42-38.016,37.42h-27.594 V2.482z M148.872,60.846h4.367c11.612,0,21.539-6.352,21.539-20.942c0-13.4-8.834-20.943-21.341-20.943h-4.565V60.846z" />
+          <path fill="#FFFFFF"
+            d="M286.873,38.513c0,24.219-17.371,41.292-41.394,41.292c-24.02,0-41.391-17.071-41.391-41.292 C204.089,15.881,223.941,0,245.479,0C267.019,0,286.873,15.881,286.873,38.513z M224.339,38.612 c0,12.905,9.529,22.333,21.141,22.333c11.613,0,21.144-9.43,21.144-22.333c0-10.323-9.526-19.752-21.144-19.752 C233.867,18.86,224.339,28.29,224.339,38.612z" />
+          <path fill="#FFFFFF"
+            d="M297.238,2.482h19.454l35.636,45.757h0.196V2.482h19.453v74.839h-19.453L316.89,31.465h-0.197v45.856 h-19.454V2.482z" />
+          <path fill="#FFFFFF"
+            d="M407.345,64.319l-5.16,13.002h-20.646l28.785-74.839h21.242l28.188,74.839h-20.745l-4.862-13.002H407.345z M420.945,25.609h-0.199l-8.039,23.824h16.178L420.945,25.609z" />
+        </g>
+      </svg>
+      <div class="page-main__image-triangle"></div>
+    </div>
+
+    <section class="review">
+      <div class="page-container">
         <div class="review__text">
           <h2 class="review__title title">Оставьте свой отзыв</h2>
           <p class="review__descrption description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
             посещенных вами достопримечательностях</p>
         </div>
-        <form method="POST" action="https://echo.htmlacademy.ru" class="page-form">
-          <div class="form-wrapper">
-            <div class="introduction">
+      </div>
+      <form method="POST" action="https://echo.htmlacademy.ru" class="page-form">
+        <div class="form-wrapper">
+          <hr class="page-hr form-hr">
+
+          <div class="introduction">
+            <div class="page-container">
               <h2 class="introduction__title title">Представьтесь:</h2>
               <div class="introduction__inputs">
                 <ul class="introduction__inputs-list introduction-list list-style-none">
 
                   <li class="introduction-list__item">
-                    <span class="person-contacts-description">Имя*:</span>
+                    <span class="person-contacts-description introduction-label">Имя*:</span>
                     <input type="text" placeholder="Петр" class="introduction__input-name input">
                   </li>
 
                   <li class="introduction-list__item">
-                    <span class="person-contacts-description">Фамилия*:</span>
+                    <span class="person-contacts-description introduction-label">Фамилия*:</span>
                     <input type="text" placeholder="Иванов" class="introduction__input-surname input">
                   </li>
 
                   <li class="introduction-list__item">
-                    <span class="person-contacts-description">Отчество*:</span>
+                    <span class="person-contacts-description introduction-label">Отчество:</span>
                     <input type="text" placeholder="Александрович" class="introduction__input-patronymic input">
                   </li>
 
                 </ul>
               </div>
             </div>
+          </div>
+          <hr class="page-hr form-hr">
 
-            <div class="contacts">
+          <div class="contacts">
+            <div class="page-container desktop-fullscreen">
               <h2 class="contacts__title title">Контактная информация:</h2>
-              <div class="contacts__phone">
-                <p class="contacts__phone-text person-contacts-description">Контактный телефон*:</p>
-                <div class="contacts__phone-email-wrapper">
-                  <input type="text" placeholder="Введите телефон" class="contacts__phone-input input">
-                  <div class="contacts__phone-icon contacts-icon"><img src="./img/icon-phone.svg" alt="Phone">
+              <div class="contacts__wrapper">
+                <div class="contacts__phone">
+                  <p class="contacts__phone-text person-contacts-description"><span class="contact-word">Контактный </span>телефон*:</p>
+                  <div class="contacts__phone-email-wrapper">
+                    <input type="text" placeholder="Введите телефон" class="contacts__phone-input input">
+                    <div class="contacts__phone-icon contacts-icon"><img src="./img/icon-phone.svg" alt="Phone">
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="contacts__email">
-                <p class="contacts__email-text person-contacts-description">Электронная почта*:</p>
-                <div class="contacts__phone-email-wrapper">
-                  <input type="text" placeholder="Введите e-mail" class="contacts__email-input input">
-                  <div class="contacts__phone-icon contacts-icon"><img src="./img/icon-mail.svg" alt="Phone">
+                <div class="contacts__email">
+                  <p class="contacts__email-text person-contacts-description">Электронная почта*:</p>
+                  <div class="contacts__phone-email-wrapper">
+                    <input type="text" placeholder="Введите e-mail" class="contacts__email-input input">
+                    <div class="contacts__phone-icon contacts-icon"><img src="./img/icon-mail.svg" alt="Phone">
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="impression">
+          </div>
+          <hr class="page-hr form-hr">
+
+          <div class="impression">
+            <div class="page-container">
               <h2 class="impression__title title">Ваше Общее впечатление:</h2>
               <div class="impression__radio-btns-wrapper">
                 <ul class="impression__radio-btns-list list-style-none radio-btns-list">
@@ -118,87 +152,100 @@
                 </ul>
               </div>
             </div>
-            <div class="sights">
+          </div>
+          <hr class="page-hr form-hr">
+
+          <div class="sights">
+            <div class="page-container">
               <h2 class="sights__title title">Посещенные достопримечательности:</h2>
               <div class="sights__checkboxes">
                 <ul class="sights__checkboxes-list list-style-none checkboxes-list">
 
                   <li class="checkboxes-list__item">
-                    <input type="checkbox" name="review-checkbox-bridge" id="review-checkbox1">
-                    <label for="review-checkbox1" class="page-label">Мост Дьявола</label>
+                    <input type="checkbox" name="review-checkbox-bridge" class="review-checkbox1">
+                    <label class="page-label checkboxed-list__label">Мост Дьявола</label>
                   </li>
 
                   <li class="checkboxes-list__item">
-                    <input type="checkbox" name="review-checkbox-mountain" id="review-checkbox2">
-                    <label for="review-checkbox2" class="page-label">Гора-Колокол</label>
+                    <input type="checkbox" name="review-checkbox-mountain" class="review-checkbox2">
+                    <label class="page-label checkboxed-list__label">Гора-Колокол</label>
                   </li>
 
                   <li class="checkboxes-list__item">
-                    <input type="checkbox" name="review-checkbox-slide" id="review-checkbox3">
-                    <label for="review-checkbox3" class="page-label">Слайд-парк</label>
+                    <input type="checkbox" name="review-checkbox-slide" class="review-checkbox3">
+                    <label class="page-label checkboxed-list__label">Слайд-парк</label>
                   </li>
 
                   <li class="checkboxes-list__item">
-                    <input type="checkbox" name="review-checkbox-rock" id="review-checkbox4">
-                    <label for="review-checkbox4" class="page-label">Красные скалы</label>
+                    <input type="checkbox" name="review-checkbox-rock" class="review-checkbox4">
+                    <label class="page-label checkboxed-list__label">Красные скалы</label>
                   </li>
 
                 </ul>
               </div>
             </div>
-            <div class="describe">
+          </div>
+          <hr class="page-hr form-hr">
+
+          <div class="describe">
+            <div class="page-container">
               <h2 class="describe__title title">Опишите свои эмоции:</h2>
               <div class="describe__textarea-wrapper">
                 <textarea class="describe__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
               </div>
             </div>
-
-            <button type="submit" class="button-send main-btn">Отправить отзыв</button>
           </div>
-        </form>
-      </section>
+          <div class="button-send-wrapper">
+            <button type="submit" class="button-send main-btn">Отправить отзыв</button>
+            <span class="remark">* — обязательные поля</span>
+          </div>
+        </div>
+      </form>
+    </section>
 
-    </div>
   </main>
 
   <footer class="page-footer">
-    <b class="page-footer__visit-sedona-slogan">#visitsedona</b>
-    <ul class="page-footer__social-media social-media-list list-style-none">
-      <li class="social-media-list__item"><a href="#">
-          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-            y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663"
-            xml:space="preserve">
-            <g id="W6EeEF_1_">
-              <g>
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z" />
+    <div class="footer-slogan-wrapper">
+      <b class="page-footer__visit-sedona-slogan">#visitsedona</b>
+    </div>
+    <div class="social-media-list-wrapper">
+      <ul class="page-footer__social-media social-media-list list-style-none">
+        <li class="social-media-list__item"><a href="#">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+              y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663"
+              xml:space="preserve">
+              <g id="W6EeEF_1_">
+                <g>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z" />
+                </g>
               </g>
-            </g>
-          </svg>
-        </a>
-      </li>
+            </svg>
+          </a>
+        </li>
 
-      <li class="social-media-list__item"><a href="#">
-          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-            y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944"
-            enable-background="new 0 0 8.672 18.944" xml:space="preserve">
-            <path
-              d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z" />
-          </svg>
-        </a>
-      </li>
+        <li class="social-media-list__item"><a href="#">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+              y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944"
+              enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+              <path
+                d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z" />
+            </svg>
+          </a>
+        </li>
 
-      <li class="social-media-list__item"><a href="#">
-          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-            y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015"
-            enable-background="new 0 0 19.979 14.015" xml:space="preserve">
-            <path
-              d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z" />
-          </svg>
-        </a>
-      </li>
-    </ul>
-
+        <li class="social-media-list__item"><a href="#">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+              y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015"
+              enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+              <path
+                d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <div class="page-footer__copyright copyright">
       <b class="copyright__text">Разработано</b>
       <svg version="1.1" class="copyright__image" xmlns="http://www.w3.org/2000/svg"

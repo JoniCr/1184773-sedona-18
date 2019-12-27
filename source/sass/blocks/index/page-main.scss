@@ -1,6 +1,6 @@
 .offer {
   @media (min-width: $tablet-width) {
-    padding-bottom: 55px;
+    padding-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,14 +20,16 @@
 
   @media (min-width: $tablet-width) {
     background: url("../../../img/bg-back-tablet@1x.jpg") no-repeat;
+    background-position: bottom;
+    height: 517px;
     background-size: cover;
-    height: 518px;
   }
 
   @media (min-width: $desktop-width) {
     background: url("../../../img/bg-back-desktop@1x.jpg") no-repeat;
     background-size: cover;
     height: 518px;
+    background-position: bottom;
   }
 }
 
@@ -42,7 +44,7 @@
   @media (min-width: $tablet-width) {
     width: 460px;
     height: 350px;
-    top: 80px;
+    top: 77px;
   }
 }
 
@@ -53,24 +55,24 @@
   left: 0;
   background: url("../../../img/bg-intro-triangle-mobile.svg");
   height: 27px;
-  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     background: url("../../../img/bg-intro-triangle-tablet.svg");
-    height: 58px;
+    height: 57px;
+    background-position: top;
     background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop-width) {
     background: url("../../../img/bg-intro-triangle-desktop.svg");
-    height: 58px;
+    background-position: top;
     background-repeat: no-repeat;
   }
 }
 
 
 .offer__text {
-  margin-top: 44px;
+  margin-top: 40px;
   text-align: center;
   padding: 0 20px;
   line-height: 26px;
@@ -84,22 +86,24 @@
 .offer__description {
   max-width: 265px;
   display: inline-block;
-  margin-top: 28px;
+  margin-top: 30px;
+  line-height: 24px;
 
   @media (min-width: $tablet-width) {
     max-width: none;
     margin-top: 32px;
+    line-height: 22px;
   }
 
-  @media (min-width: $tablet-width) {
-    margin-top: 28px;
+  @media (min-width: $desktop-width) {
+    margin-top: 30px;
   }
 }
 
 // reason-one
 
 .reason-one {
-  margin-top: 13px;
+  margin-top: 9px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -130,7 +134,7 @@
   background: $bg-color;
   position: relative;
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     min-height: 250px;
@@ -149,47 +153,57 @@
 }
 
 .reason-one__title {
-  margin: 42px auto 10px auto;
+  margin: 39px auto 12px auto;
 
   @media (min-width: $tablet-width) {
     max-width: 50%;
-    margin: 46px auto 13px auto;
+    margin: 47px auto 13px auto;
+    padding-right: 8px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 54px;
-    margin-right: 102px;
+    margin-top: 52px;
   }
 }
 
 .reason-one__description {
   line-height: 20px;
-  margin: 20px auto 0 auto;
-  max-width: 96%;
+  margin: 18px auto 0 auto;
+  max-width: 265px;
 
   @media (min-width: $tablet-width) {
     max-width: 68%;
-    margin: 22px auto 0 auto;
+    margin: 24px 0 0 35px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 7px;
+  }
+}
+
+.reason-one__number {
+  @media (min-width: $tablet-width) {
+    margin-right: 5px;
   }
 }
 
 
 .reason-one__icons-part {
-  min-height: 395px;
+  height: 394px;
   padding: 22px 0 0 12px;
 
   @media (min-width: $tablet-width) {
-    min-height: 270px;
+    height: 270px;
     display: flex;
     padding: 60px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 274px;
+    padding: 58px 0 0 0;
+    height: 273px;
   }
 }
 
@@ -197,21 +211,21 @@
   padding-top: 13px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 24px;
+    padding-top: 26px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 26px;
+    padding-top: 28px;
   }
 }
 
 .icons-part__description {
-  margin: 18px 0 0 0;
+  margin: 15px 0 0 0;
   max-width: 208px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    margin-top: 21px;
+    margin-top: 22px;
   }
 
   @media (min-width: $desktop-width) {
@@ -243,8 +257,15 @@
 }
 
 .icons-part-house {
+  padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-right: 14px;
+    padding-right: 11px;
+    padding-top: 25px;
   }
 }
 
@@ -267,12 +288,23 @@
 }
 
 .icons-part__gift-desc {
+  margin-top: 16px;
+
   @media (min-width: $tablet-width) {
     max-width: 69%;
+    margin-top: 22px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 51%;
+  }
+}
+
+.icons-part-food {
+  padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 26px;
   }
 }
 
@@ -292,13 +324,16 @@
 
 .icons-part__food-desc {
   max-width: 230px;
+  margin: 15px 0 0 0;
 
   @media (min-width: $tablet-width) {
     max-width: 62%;
+    margin: 22px 0 0 47px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 72%;
+    margin: 22px 0 0 56px;
   }
 }
 
@@ -310,7 +345,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    min-height: 256px;
+    height: 254px;
   }
 }
 
@@ -338,34 +373,72 @@
   height: 260px;
 
   @media (min-width: $tablet-width) {
-    background: url("../../../img/main-city-tablet@1x.jpg") center center no-repeat;
+    background: url("../../../img/main-city-tablet@1x.jpg");
     height: auto;
-    background-size: cover;
     width: 67%;
   }
 
   @media (min-width: $desktop-width) {
-    background: url("../../../img/main-city-desktop@1x.jpg") center center no-repeat;
-    background-size: cover;
+    background: url("../../../img/main-city-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
 .reason-icon {
   width: 40px;
-  height: 40px;
-  fill: $bg-color;
+  height: 36px;
+  fill: #81b3d2;
+  padding-top: 5px;
   margin-right: 10px;
+
 
   @media (min-width: $tablet-width) {
     display: block;
     width: 100%;
     height: 75px;
+    padding-top: 0;
+    margin-right: 0;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
     width: 100%;
     height: 73px;
+  }
+}
+
+.icon-souvenir {
+  padding-top: 2px;
+  width: 42px;
+  height: 36px;
+  margin-right: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    margin-right: 0;
+    width: 61px;
+    height: auto;
+    padding-left: 86px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.icon-food {
+  width: 38px;
+  height: 34px;
+  fill: #81b3d2;
+  padding-top: 9px;
+  margin-right: 12px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding-top: 3px;
+    height: 70px;
   }
 }
 
@@ -380,6 +453,10 @@
     display: flex;
     flex-direction: row-reverse;
   }
+
+  @media (min-width: $desktop-width) {
+    height: 255px;
+  }
 }
 
 .reason-two__title {
@@ -387,11 +464,12 @@
 
   @media (min-width: $tablet-width) {
     max-width: 151px;
-    margin: 0 auto 15px auto;
+    margin: 2px auto 15px 33px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 6px;
+    padding-top: 7px;
+    margin: 0 auto 14px auto;
   }
 }
 
@@ -400,7 +478,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 75%;
-    margin: 20px auto 0 auto;
+    margin: 21px auto 0 28px;
   }
 
   @media (min-width: $desktop-width) {
@@ -410,21 +488,21 @@
 }
 
 .reason-two__text-part {
-  background: #81b3d2;
+  background: $bg-color;
   min-height: 148px;
   padding: 42px 20px 0 20px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     background: $bg-color;
-    min-height: 210px;
-    width: 28%;
-    padding: 45px 15px 0 20px;
+    height: 212px;
+    width: 29%;
+    padding: 45px 12px 0 18px;
   }
 
   @media (min-width: $desktop-width) {
     width: 31%;
-    padding-right: 15px;
+    padding: 45px 15px 0 20px;
   }
 }
 
@@ -434,16 +512,17 @@
   background-size: cover;
 
   @media (min-width: $tablet-width) {
-    background: url("../../../img/main-bridge-tablet@1x.jpg") center center no-repeat;
-    background-size: cover;
+    background: url("../../../img/main-bridge-tablet@1x.jpg");
     width: 68%;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 257px;
   }
 
   @media (min-width: $desktop-width) {
-    background: url("../../../img/main-bridge-desktop@1x.jpg") center center no-repeat;
-    background-size: cover;
-    height: 255px;
+    background: url("../../../img/main-bridge-desktop@1x.jpg") no-repeat;
     width: 69%;
+    background-position: center -76px;
   }
 }
 
@@ -452,12 +531,16 @@
 .reason-three-four-five-wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
-    min-height: 250px;
+    height: 257px;
   }
 }
 
 .reason-three__wrapper {
   @media (min-width: $tablet-width) {
+    padding-right: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-right: 15px;
   }
 }
@@ -482,7 +565,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 70%;
-    margin-top: 25px;
+    margin-top: 23px;
   }
 
   @media (min-width: $desktop-width) {
@@ -510,7 +593,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 52%;
-    margin-top: 24px;
+    margin-top: 23px;
   }
 
   @media (min-width: $desktop-width) {
@@ -519,13 +602,13 @@
   }
 }
 
-.reason-five {
-  padding-top: 18px;
-}
-
 .reason-five__title {
-  margin-bottom: 12px;
+  padding-top: 16px;
   width: 28%;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .reason-five__description {
@@ -534,11 +617,13 @@
 
   @media (min-width: $tablet-width) {
     max-width: 63%;
-    margin-top: 24px;
+    margin-top: 22px;
+    padding-right: 4px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 69%;
+    margin-top: 22px;
   }
 }
 
@@ -565,7 +650,7 @@
 
   @media (min-width: $tablet-width) {
     width: 33.3%;
-    padding-top: 40px;
+    padding-top: 46px;
   }
 
   @media (min-width: $desktop-width) {
@@ -573,32 +658,107 @@
   }
 }
 
+.reason-five {
+  height: 155px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 46px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 1px;
+  }
+}
+
 // end of the reasons
+
+.interested {
+  margin-bottom: 35px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}
 
 .interested__map {
   background: url("../../../img/bg-map-mobile@1x.jpg");
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: 350px;
   background-repeat: no-repeat;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     background: url("../../../img/bg-map-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
   }
 
   @media (min-width: $desktop-width) {
     background: url("../../../img/bg-map-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: bottom;
+  }
+
+  &::after {
+    content: "";
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    border: 5px #ffffff solid;
+    background-color: #81b3d2;
+    border-radius: 50%;
   }
 }
 
+
 .interested__find-hotel {
   text-align: center;
+  padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 50px;
+  }
 }
 
 .interested__button {
-  display: initial;
+  display: block;
+  margin: 34px auto 47px auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 42px auto 57px auto;
+    padding: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 48px auto 67px auto;
+  }
+}
+
+.interested__title {
+  font-size: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
+}
+
+.interested__description {
+  margin: 24px auto 0 auto;
+  max-width: 263px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+    max-width: 397px;
+  }
 }
