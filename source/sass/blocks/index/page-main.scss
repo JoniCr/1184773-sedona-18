@@ -18,6 +18,13 @@
   position: relative;
   background-repeat: no-repeat;
 
+  @media (min-resolution: $retina-dppx) {
+    background: url("../../../img/bg-back-mobile@2x.jpg");
+    background-size: cover;
+    background-position: 50%;
+  }
+
+
   @media (min-width: $tablet-width) {
     background: url("../../../img/bg-back-tablet@1x.jpg") no-repeat;
     background-position: bottom;
@@ -25,10 +32,22 @@
     background-size: cover;
   }
 
+  @media (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
+    background: url("../../../img/bg-back-tablet@2x.jpg");
+    background-size: cover;
+    background-position: bottom;
+  }
+
   @media (min-width: $desktop-width) {
     background: url("../../../img/bg-back-desktop@1x.jpg") no-repeat;
     background-size: cover;
     height: 518px;
+    background-position: bottom;
+  }
+
+  @media (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
+    background: url("../../../img/bg-back-desktop@2x.jpg");
+    background-size: cover;
     background-position: bottom;
   }
 }
@@ -372,8 +391,18 @@
   background: url("../../../img/main-city-mobile@1x.jpg") center center no-repeat;
   height: 260px;
 
+  @media (min-resolution: $retina-dppx) {
+    background: url("../../../img/main-city-mobile@2x.jpg") center center no-repeat;
+  }
+
   @media (min-width: $tablet-width) {
     background: url("../../../img/main-city-tablet@1x.jpg");
+    height: auto;
+    width: 67%;
+  }
+
+  @media (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
+    background: url("../../../img/main-city-tablet@2x.jpg");
     height: auto;
     width: 67%;
   }
@@ -381,6 +410,11 @@
   @media (min-width: $desktop-width) {
     background: url("../../../img/main-city-desktop@1x.jpg");
     background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
+    background: url("../../../img/main-city-desktop@2x.jpg");
     background-position: center;
   }
 }
@@ -464,7 +498,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 151px;
-    margin: 2px auto 15px 33px;
+    margin: 0 auto 16px auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -511,16 +545,34 @@
   height: 260px;
   background-size: cover;
 
+  @media (min-resolution: $retina-dppx) {
+    background: url("../../../img/main-bridge-mobile@2x.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
   @media (min-width: $tablet-width) {
     background: url("../../../img/main-bridge-tablet@1x.jpg");
     width: 68%;
     background-position: right;
     background-repeat: no-repeat;
-    height: 257px;
+    height: auto;
+    background-size: cover;
+  }
+
+  @media (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
+    background: url("../../../img/main-bridge-tablet@2x.jpg") no-repeat;
+    width: 68%;
+    background-size: cover;
   }
 
   @media (min-width: $desktop-width) {
     background: url("../../../img/main-bridge-desktop@1x.jpg") no-repeat;
+    width: 69%;
+    background-position: center -76px;
+  }
+
+  @media (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
+    background: url("../../../img/main-bridge-desktop@2x.jpg") no-repeat;
     width: 69%;
     background-position: center -76px;
   }
