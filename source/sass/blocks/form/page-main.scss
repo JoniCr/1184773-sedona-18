@@ -15,11 +15,13 @@
     min-height: 290px;
     background-repeat: no-repeat;
     background-position: bottom;
+    background-size: cover;
   }
 
   @media (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
     background: url("../../../img/bg-back-tablet@2x.jpg");
     background-position: bottom;
+    background-size: cover;
   }
 
   @media (min-width: $desktop-width) {
@@ -95,12 +97,24 @@
   }
 }
 
+.review {
+  margin-bottom: 71px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 97px;
+  }
+}
+
 .review__title {
   margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 27px;
   }
 }
 
@@ -276,22 +290,64 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 40px;
+    padding-top: 39px;
   }
 }
 
 .contacts__title {
   text-align: center;
   margin-bottom: 30px;
+  position: relative;
+
 
   @media (min-width: $tablet-width) {
     flex-basis: 100%;
-    margin-bottom: 31px;
+    margin-bottom: 34px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 126px;
+      height: 1px;
+      background-color: $grey-color;
+      left: 0;
+      top: 13px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 126px;
+      height: 1px;
+      background-color: $grey-color;
+      right: 0;
+      top: 13px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 77px;
+    margin-bottom: 76px;
     padding-right: 19px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 279px;
+      height: 1px;
+      background-color: #e5e5e5;
+      left: 111px;
+      top: 11px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 279px;
+      height: 1px;
+      background-color: #e5e5e5;
+      right: 129px;
+      top: 11px;
+    }
   }
 }
 
@@ -398,6 +454,10 @@
   display: flex;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 31px;
   }
 }
@@ -487,6 +547,10 @@ input[type="radio"] {
   @media (min-width: $tablet-width) {
     order: 3;
     flex-basis: 100%;
+    padding-top: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-top: 23px;
   }
 }
@@ -495,14 +559,55 @@ input[type="radio"] {
   text-align: center;
   line-height: 24px;
   margin-bottom: 19px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 50%;
     margin: 0 auto 43px auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 126px;
+      height: 1px;
+      background-color: $grey-color;
+      left: -161px;
+      top: 23px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 126px;
+      height: 1px;
+      background-color: $grey-color;
+      right: -161px;
+      top: 23px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 30%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 283px;
+      height: 1px;
+      background-color: #e5e5e5;
+      right: -307px;
+      top: 24px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 283px;
+      height: 1px;
+      background-color: #e5e5e5;
+      left: -307px;
+      top: 24px;
+    }
   }
 }
 
@@ -564,7 +669,7 @@ input[type="checkbox"] {
 // describe
 
 .describe {
-  padding-top: 22px;
+  padding-top: 19px;
 
   @media (min-width: $tablet-width) {
     order: 4;
@@ -575,9 +680,54 @@ input[type="checkbox"] {
 .describe__title {
   text-align: center;
   margin-bottom: 21px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 61px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 126px;
+      height: 1px;
+      background-color: $grey-color;
+      left: 0;
+      top: 14px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 126px;
+      height: 1px;
+      background-color: $grey-color;
+      right: 0;
+      top: 14px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 59px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 279px;
+      height: 1px;
+      background-color: #e5e5e5;
+      right: 112px;
+      top: 14px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 279px;
+      height: 1px;
+      background-color: #e5e5e5;
+      left: 112px;
+      top: 14px;
+    }
   }
 }
 
@@ -592,14 +742,14 @@ input[type="checkbox"] {
   height: 160px;
   padding: 0;
   overflow: hidden;
-  margin-bottom: 46px;
+  margin-bottom: 48px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 53px;
+    margin-bottom: 55px;
   }
 }
 
@@ -613,19 +763,17 @@ input[type="checkbox"] {
   @media (min-width: $tablet-width) {
     order: 5;
     padding-left: 51px;
-    margin-bottom: 97px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 111px;
-    margin-bottom: 96px;
   }
 }
 
 .button-send {
-  width: 100%;
+  width: 278px;
   margin: 0 auto;
-  padding: 17px 0;
+  padding: 18px 0;
 
   @media (min-width: $tablet-width) {
     width: 324px;
