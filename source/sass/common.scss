@@ -69,3 +69,19 @@ body {
     display: none;
   }
 }
+
+.only-desktop-visible {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.mobile-invisible {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

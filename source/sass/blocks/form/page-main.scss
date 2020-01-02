@@ -434,17 +434,27 @@
 .contacts-icon {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #e6e6e6;
   margin: 0;
   width: 58px;
   height: 58px;
+  z-index: 9;
 
   @media (min-width: $tablet-width) {
     width: 63px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
     width: 58px;
+  }
+}
+
+.contacts-svg-icon {
+  @media (min-width: $desktop-width) {
+    width: 18px;
+    height: 18px;
   }
 }
 
@@ -627,7 +637,7 @@ input[type="checkbox"] {
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
-    flex-wrap: unset;
+    flex-wrap: nowrap;
     padding: 0 65px 0 113px;
   }
 }
