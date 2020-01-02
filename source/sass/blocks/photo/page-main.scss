@@ -288,16 +288,14 @@
 
 .all-photos__svg {
   margin-right: 15px;
-
-  @media (min-width: $tablet-width) {
-    margin-right: 12px;
-  }
-}
-
-.all-photos__svg path {
   fill: #b2b2b2;
 
+  @media (min-width: $tablet-width) {
+    margin-right: 10px;
+  }
+
   @media (min-width: $desktop-width) {
+    margin-right: 12px;
     fill: #ffffff;
   }
 }
