@@ -818,11 +818,13 @@
 
 .interested__button {
   display: block;
-  margin: 34px auto 47px auto;
+  margin: 34px auto 49px;
+  padding: 17px 47px;
 
   @media (min-width: $tablet-width) {
     margin: 42px auto 57px auto;
     padding: auto;
+    padding: 18px 47px;
   }
 
   @media (min-width: $desktop-width) {

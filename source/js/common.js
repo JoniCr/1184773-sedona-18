@@ -1,6 +1,6 @@
-const mainNav = document.querySelector('.main-nav');
-const btnClose = document.querySelector('.main-nav__toggle');
-const btnOpen = document.querySelector('.top-menu__burger');
+var mainNav = document.querySelector('.main-nav');
+var btnClose = document.querySelector('.main-nav__toggle');
+var btnOpen = document.querySelector('.top-menu__burger');
 
 function inactivate() {
   mainNav.classList.add('inactive-menu');
