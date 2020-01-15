@@ -464,7 +464,7 @@
 }
 
 .doubts__control {
-  bottom: -60px;
+  bottom: -62px;
   position: absolute;
   text-align: center;
   right: 50%;
@@ -474,6 +474,7 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     bottom: 4px;
+    z-index: 9;
   }
 }
 
@@ -496,23 +497,45 @@
 .video-control__range {
   width: 235px;
   height: 3px;
-  position: absolute;
-  top: 22px;
-  left: 50%;
-  transform: translateX(-50%);
-  appearance: none;
+  transform: translate(22px, 21px);
   background: rgba(255, 255, 255, 0.2);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    border-radius: 50%;
+    left: 37px;
+    width: 9px;
+    height: 9px;
+    background: #ffffff;
+
+    @media (min-width: $tablet-width) {
+      left: 113px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 387px;
-    top: 44px;
-    left: 289px;
+    top: 24px;
+    left: 71px;
     z-index: 9;
   }
 
   @media (min-width: $desktop-width) {
     width: 540px;
-    left: 361px;
+    left: 71px;
+  }
+}
+
+path.icon-like-path {
+  @media (min-width: $tablet-width) {
+    fill: $dark-grey-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    fill: #ffffff;
   }
 }
 

@@ -91,7 +91,7 @@ gulp.task("html", function () {
 });
 
 gulp.task("js", function () {
-  return gulp.src("source/js/*.js")
+  return gulp.src("source/js/**/*.js")
     .pipe(uglify())
     .pipe(gulp.dest("build/js"));
 });
@@ -113,5 +113,5 @@ gulp.task("clean", function () {
 });
 
 
-gulp.task("build", gulp.series("clean", "copy", "js", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "js"));
 gulp.task("start", gulp.series("build", "server"));

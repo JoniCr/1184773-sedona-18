@@ -487,6 +487,7 @@
 .impression {
   padding-top: 20px;
   margin-bottom: 31px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     order: 0;
@@ -495,6 +496,58 @@
     border-right: 1px solid $grey-color;
   }
 }
+
+input[type="radio"],
+input[type="checkbox"] {
+  visibility: hidden;
+}
+
+input[type="radio"] + label::before {
+  background: $inputs-bg-color;
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  content: " ";
+  position: absolute;
+  left: 14px;
+  transform: translateY(-13px);
+
+  @media (min-width: $tablet-width) {
+    left: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 117px;
+  }
+}
+
+input[type="radio"]:checked + label::before {
+  background: #333333;
+  width: 21px;
+  border: 16px solid #f2f2f2;
+  height: 20px;
+}
+
+input[type="checkbox"] + .checkboxed-list__label::before {
+  background: $inputs-bg-color;
+  height: 55px;
+  width: 55px;
+  border-radius: 5px;
+  content: " ";
+  position: absolute;
+  left: 4px;
+  transform: translateY(-16px);
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+  }
+}
+
+input[type="checkbox"]:checked + .checkboxed-list__label::before {
+  background: url("../img/icon-tick.svg") center center no-repeat;
+  background-color: #f2f2f2;
+}
+
 
 .impression__title {
   text-align: center;
@@ -665,6 +718,7 @@ input[type="checkbox"] {
   display: flex;
   align-items: center;
   margin-bottom: 24px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     flex-basis: 47%;
